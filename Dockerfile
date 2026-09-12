@@ -6,7 +6,7 @@
 # タグは浮動(latestの中身が無断で変わる)ため、digestで固定しRenovateに
 # 更新PRを出させている(更新検知の仕組みはCLAUDE.md参照)。
 ARG PYTHON_DEV_IMAGE=dhi.io/python:3-debian-dev@sha256:7e527362b86f335bf5db8db53ab6b7aa128a0db6c1d4da75c32436424e0255ee
-ARG PYTHON_PRD_IMAGE=dhi.io/python:3@sha256:ca15493305d675cccc8f3ea8ee5cdff5f4904ae8f90ab9fd26a0a5cbe5ad984a
+ARG PYTHON_PRD_IMAGE=dhi.io/python:3@sha256:b7f0db069020910078cdd92f26326ec4b07c3d746e865b1a8aaf16a22b62e55e
 # yt-dlpが映像と音声を別々に取得してmp4へマージするためにffmpegが必須だが、
 # 本番用の dhi.io/python:3 は最小構成でパッケージマネージャを持たないため
 # apt等でインストールできない。このイメージは外部依存を持たない静的PIE
